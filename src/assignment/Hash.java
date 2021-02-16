@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Hash {
      public static void main(String args[]){
-    	 HashSet<Integer> hs = new HashSet();
+    	 HashSet<Integer> hs = new HashSet<Integer>();
     	 hs.add(12);
     	 hs.add(23);
     	 hs.add(90);

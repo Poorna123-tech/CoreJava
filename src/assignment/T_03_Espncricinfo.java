@@ -1,10 +1,10 @@
-package programming;
+package assignment;
 
 
 
 import java.text.DecimalFormat;
 
-class Batsman {
+class Batsman1 {
 private String name;
 private int runsScored;
 private int centuries;
@@ -16,11 +16,11 @@ private int id;
 
 private static int idGenerator = 100000;
 
-public Batsman() {
+public Batsman1() {
 this.id = ++idGenerator;
 }
 
-public Batsman(String name, int runsScored, int centuries, int halfCenturies, int ballsFaced, int fours,
+public Batsman1(String name, int runsScored, int centuries, int halfCenturies, int ballsFaced, int fours,
 int sixes) {
 this.id = ++idGenerator;
 this.name = name;
@@ -32,7 +32,7 @@ this.fours = fours;
 this.sixes = sixes;
 }
 
-public Batsman getData() {
+public Batsman1 getData() {
 return this;
 }
 
@@ -102,7 +102,7 @@ this.sixes = sixes;
 }
 
 public static void setIdGenerator(int idGenerator) {
-Batsman.idGenerator = idGenerator;
+Batsman1.idGenerator = idGenerator;
 }
 
 }
@@ -111,11 +111,11 @@ class Espncricinfo {
 
 // 1st specification
 final private int SIZE = 50;
-private Batsman[] batsmans = new Batsman[SIZE];
+private Batsman1[] batsmans = new Batsman1[SIZE];
 private int noOfBatsmen = 0;
 
 // 2nd specification
-public Batsman[] getBatsmans() {
+public Batsman1[] getBatsmans() {
 return batsmans;
 }
 
@@ -129,7 +129,7 @@ public int addBatsman(String name, int runsScored, int centuries, int halfCentur
 int sixes) {
 if (noOfBatsmen < SIZE - 1) {
 
-batsmans[noOfBatsmen] = new Batsman(name, runsScored, centuries, halfCenturies, ballsFaced, fours, sixes);
+batsmans[noOfBatsmen] = new Batsman1(name, runsScored, centuries, halfCenturies, ballsFaced, fours, sixes);
 noOfBatsmen++;
 return batsmans[noOfBatsmen - 1].getId();
 
@@ -140,7 +140,7 @@ return 0;
 }
 
 // // 5th specification
-public Batsman updateBatsmanStats(int id, int runsScored, int fours, int sixes, int ballsFaced) {
+public Batsman1 updateBatsmanStats(int id, int runsScored, int fours, int sixes, int ballsFaced) {
 
 for (int i = 0; i <= SIZE; i++) {
 if (id == batsmans[i].getId()) {
@@ -156,8 +156,8 @@ return null;
 
 }
 
-// 6th specification
-public Batsman getBatsman(int batsmanid) {
+// 6th specifi1cation
+public Batsman1 getBatsman(int batsmanid) {
 for (int i = 0; i <= SIZE; i++) {
 if (batsmanid == batsmans[i].getId()) {
 return batsmans[i];
@@ -177,7 +177,7 @@ espncricinfo.addBatsman("AB de Villers", 687, 1, 6, 407, 57, 37);
 espncricinfo.addBatsman("Virak Kohli", 973, 4, 7, 670, 83, 38);
 espncricinfo.updateBatsmanStats(100001, 45, 5, 1, 33);
 
-Batsman batsman = espncricinfo.getBatsman(100002);
+Batsman1 batsman = espncricinfo.getBatsman(100002);
 if (null != batsman) {
 System.out.println("ID :" + batsman.getId());
 System.out.println("Name :" + batsman.getName());

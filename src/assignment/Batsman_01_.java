@@ -9,8 +9,8 @@ class Batsman {
     int fours;
     int sixes;
   
-    void  setData(String Name, int runsScored, int centuries, int halfCenturies, int ballsFaced, int fours, int sixes){
- 	   this.Name = Name;
+    void  setData(String name, int runsScored, int centuries, int halfCenturies, int ballsFaced, int fours, int sixes){
+ 	   this.name = name;
  	   this.runsScored = runsScored;
  	   this.centuries = centuries;
  	   this.halfCenturies = halfCenturies;
