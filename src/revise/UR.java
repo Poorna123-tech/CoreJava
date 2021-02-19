@@ -6,9 +6,9 @@ public class UR {
      private String FirstName;
      private String LastName;
      private long MobileNumber;
-     private char gender;
+    
      private String Mailid;
-     public int dateOfBirth;
+    
      public String username;
      private String password;
      public int user_id =1;
