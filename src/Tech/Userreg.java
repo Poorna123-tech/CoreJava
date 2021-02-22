@@ -138,6 +138,6 @@ public class Userreg {
 			input = sc.next();
 		}
 		sc.close();
-		System.out.println("Program exited");
+		System.out.println("Program existed");
 	}
 }
