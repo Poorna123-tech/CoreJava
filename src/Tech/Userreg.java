@@ -61,6 +61,10 @@ class Users {
 
 }
 
+class Login {
+
+}
+
 public class Userreg {
 	HashMap<String, Users> userDetails;
 
@@ -127,7 +131,7 @@ public class Userreg {
 				if (password.equals(existingUser.getPassword()))
 					System.out.println("User authenticated");
 				else
-					System.out.println("Incorrect password");
+					System.out.println("Incorrect password, please try again");
 			}
 			System.out.println();
 			System.out.println("Enter Login or Register to continue");
