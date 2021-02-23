@@ -2,10 +2,14 @@ package revise;
 
 public class EH extends Exception{
 	
+			/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 			private String message;
 			
 			public void Test(String message){
-				this.message = message;
+				this.setMessage(message);
 			}
 			
 			public static void main(String[] args){
@@ -19,6 +23,14 @@ public class EH extends Exception{
 				}catch(Exception e){
 					System.out.println("Test Exception");
 				}
+			}
+
+			public String getMessage() {
+				return message;
+			}
+
+			public void setMessage(String message) {
+				this.message = message;
 			}
 			
 		}
