@@ -68,7 +68,8 @@ package assignment;
  	 }
  public class T2_Batsman{
    public static void main(String args[]){
-		 T2_Batsman b = new T2_Batsman();
+		 @SuppressWarnings("unused")
+		T2_Batsman b = new T2_Batsman();
 		 System.out.print("name = AB de Villars" + "\nrunsScored = 973" +  "\ncenturies = 4" + "\nhalfCenturies = 7" + "\nballsFaced = 640" + "\nfours = 83"+ "\nsixes = 38");
    }
  }

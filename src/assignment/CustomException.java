@@ -1,6 +1,11 @@
 package assignment;
  class InvalidAgeException extends Exception{
-	 InvalidAgeException(String s){
+	 /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	InvalidAgeException(String s){
 		 super();
 	 }
  }

@@ -3,17 +3,16 @@ package assignment;
 public class Finalize {
 
 
-public void finalize() { System.out.println("Finalize");}
-	public static void main(String args[]){
+protected void finalize() { System.out.println("Finalize");}
+	
 	    int f1= 2;
 	    int f2 =6;
-	    int f3 = 0;
-		//f = new Finalize();
-		Finalize u = new Finalize();
+	    int f3 = 0;{
+
+		
 		f3 = f1 + f2;
-		System.out.println("f3");
-		//f=u;
-		System.gc();System.gc();
+		System.out.println(f3);
+		
 	}
 
 }

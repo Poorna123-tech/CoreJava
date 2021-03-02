@@ -2,7 +2,6 @@ package assignment;
 
 import java.util.Scanner;
 
-import org.omg.DynamicAny.DynAnyPackage.InvalidValue;
 
 import java.lang.Exception;
 
@@ -11,7 +10,8 @@ class Prime {
 	
 	public static void main(String args[]) {
 		   Prime p = new Prime();
-		   Scanner sc=new Scanner(System.in);
+		   @SuppressWarnings("resource")
+		Scanner sc=new Scanner(System.in);
 		   
 		   int n = 0;
 		   System.out.println("Enter the number of primes to be printed");

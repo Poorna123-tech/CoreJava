@@ -9,7 +9,7 @@ interface MyFunctionalInterface {
 
 public class Ex {
 
-	public static void main(String args[]) {
+	public static void main(String args []) {
 		// lambda expression
 		MyFunctionalInterface msg = () -> {
 			return "Hello";

@@ -1,9 +1,11 @@
 package assignment;
 import java.io.*;
    public class Throws {
-	   public static void findFile() throws IOException{
+	   @SuppressWarnings("unused")
+	public static void findFile() throws IOException{
 		 File f = new File("jhf");
-		 FileInputStream stream = new FileInputStream(f);
+		 @SuppressWarnings("resource")
+		FileInputStream stream = new FileInputStream(f);
 	   }
 
 	   public static void main(String args[]){

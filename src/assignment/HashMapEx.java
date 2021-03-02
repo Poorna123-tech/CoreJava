@@ -7,7 +7,7 @@ import java.util.*;
     	   map.put("Sree", 4);
     	   map.put("Pavani", 6);
     	   System.out.println("Iterating HashMap");
-    	   for(Map.Entry a : map.entrySet()){
+    	   for(Map.Entry <String, Integer>a : map.entrySet()){
     	   System.out.println(a.getValue() + " "+a.getKey());
     	   System.out.println();
     	   }

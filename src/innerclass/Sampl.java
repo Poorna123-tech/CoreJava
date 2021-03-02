@@ -1,24 +1,5 @@
 package innerclass;
 
-
-/*public class Sampl {
-     private float f = 10.0f;
-     void display(){
-    	 class Local{
-    		 void msg(){
-    			 System.out.println(f);
-    		 }
-    		 
-    	 }Local l = new Local();
-    	 l.msg();
-     }
-     public static void main(String[] args) {
-		Sampl m = new Sampl();
-		m.display();
-	}
-}
-*/
-
 //Local Inner Class Example
 
 public class Sampl{

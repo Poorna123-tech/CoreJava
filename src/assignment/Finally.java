@@ -6,6 +6,7 @@ public class Finally {
 		
 		try{
 			String s = "Sree";
+			System.out.println(s);
 		}catch(Exception e){System.out.println(e);}
 		finally { System.out.println("success");}
 	}

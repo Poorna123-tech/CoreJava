@@ -10,6 +10,6 @@ public class Reve {
 	 for(int i=s.length();i>0;--i) 
 	 {
 		 System.out.print(s.charAt(i-1)); 
-		 }
+		 }sc.close();
  }
 }

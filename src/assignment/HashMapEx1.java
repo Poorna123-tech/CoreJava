@@ -19,7 +19,7 @@ public class HashMapEx1 {
     	   map1.put(5, "chinni");
     	   map1.putAll(map);
     	   for (Iterator<Entry<Integer, String>> iterator = (map1.entrySet()).iterator(); iterator.hasNext();) {
-			Map.Entry k = iterator.next();
+			Map.Entry<Integer, String> k = iterator.next();
 			System.out.println(k.getKey() + "   " + k.getValue());
 		}
     		  map1.remove(1);
